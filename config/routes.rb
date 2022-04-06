@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :shows
   get '/signup', to: "users#new" # note: '/signup' = signup_path
   post '/users', to: "users#create"
   
